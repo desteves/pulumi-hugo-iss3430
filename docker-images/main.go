@@ -17,7 +17,6 @@ func main() {
 
 		image, err := ecr.NewImage(ctx, "image", &ecr.ImageArgs{
 			RepositoryUrl: repository.Url,
-			Path:          pulumi.String("./app"),
 		})
 		if err != nil {
 			return err
